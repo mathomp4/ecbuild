@@ -90,7 +90,7 @@ macro( ecbuild_install_project )
     ### PACKAGING ########################################################
 
     set( PNAME ${PROJECT_NAME_CAPS} )
-    set( LNAME ${PROJECT_NAME_LOWCASE} )
+    string (TOLOWER ${PROJECT_NAME} LNAME)
 
     # components
 
